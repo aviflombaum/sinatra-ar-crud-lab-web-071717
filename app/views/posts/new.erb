@@ -1,0 +1,27 @@
+<h1>Create a Post</h1>
+
+<form action="/posts" method="POST">
+  <p>
+    <input type="text" name="post[name]" />
+  </p>
+
+  <p>
+    <input type="text" name="post[author_name]" />
+  </p>
+  
+  
+
+  <!--   <p>
+    <select name="post[author_id]" >
+    <%# Author.all.each do |author| %>
+    <option value="<%#= author.id %>"><%#= author.name %></option>
+    <%# end %>
+    </select>
+  </p> -->
+
+  <p>
+    <textarea name="post[content]"></textarea>
+  </p>
+
+  <input type="submit" id="submit" />
+</form>

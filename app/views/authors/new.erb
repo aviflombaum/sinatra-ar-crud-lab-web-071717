@@ -1,0 +1,20 @@
+
+
+<form action="/authors" method="POST">
+
+  <input type="text" name="author[name]" />
+  
+
+  <input type="text" name="author[posts_attributes][][name]" />
+  <input type="text" name="author[posts_attributes][][name]" />
+  <input type="text" name="author[posts_attributes][][name]" />
+  <input type="text" name="author[posts_attributes][][name]" />
+
+  params = {
+    :author => {
+      :posts => [
+        {:name}
+      ]
+    }
+  }
+</form>
